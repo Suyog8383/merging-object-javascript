@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  const obj1 = {
+    name: "suyog",
+    city: "pune",
+    state: "maharashtra",
+  };
+  const obj2 = {
+    name: "kiran",
+    city: "mumbai",
+    state: "maharashtra",
+  };
+
+  const obj3 = { ...obj1, ...obj2 };
+  const obj4 = { ...obj1, ...obj2, isActive: true };
+  const obj5 = Object.assign({}, obj1, obj2);
+  console.log("@SN ", obj3, obj4, obj5);
+</script>
